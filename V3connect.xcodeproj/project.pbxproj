@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A70A31EC2A8619BF0015CA36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A31EB2A8619BF0015CA36 /* AppDelegate.swift */; };
+		A7100D182AD511D2007E5B28 /* DraggableVideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7100D172AD511D2007E5B28 /* DraggableVideoCallView.swift */; };
+		A7100D1A2AD52A67007E5B28 /* PictureInPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7100D192AD52A67007E5B28 /* PictureInPictureViewController.swift */; };
+		A7395C892AC40D1F00B0D898 /* APi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7395C882AC40D1F00B0D898 /* APi.swift */; };
+		A7395C8C2AC40DFD00B0D898 /* AlamoNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7395C8B2AC40DFD00B0D898 /* AlamoNetworkManager.swift */; };
+		A7395C8E2AC4111200B0D898 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7395C8D2AC4111200B0D898 /* ApiProvider.swift */; };
+		A7395C902AC4139C00B0D898 /* VoipDeviceTokenApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7395C8F2AC4139C00B0D898 /* VoipDeviceTokenApi.swift */; };
+		A7395C922AC421D700B0D898 /* VoipDeviceTokenMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7395C912AC421D700B0D898 /* VoipDeviceTokenMode.swift */; };
+		A7395C942AC436A900B0D898 /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7395C932AC436A900B0D898 /* InternetConnection.swift */; };
+		A73A75572A8F32890017F28D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73A75562A8F32890017F28D /* BaseView.swift */; };
+		A73A75592A8F32D00017F28D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73A75582A8F32D00017F28D /* BaseViewModel.swift */; };
+		A73A755B2A8F33020017F28D /* BaseViewModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73A755A2A8F33020017F28D /* BaseViewModelEnum.swift */; };
+		A73A755D2A8F34660017F28D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73A755C2A8F34660017F28D /* ContentView.swift */; };
+		A743725C2AAD766B0030F3A2 /* PJSIPIntialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743725B2AAD766B0030F3A2 /* PJSIPIntialization.swift */; };
+		A7643CED2A85EB9700FF4EE6 /* V3connectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643CEC2A85EB9700FF4EE6 /* V3connectApp.swift */; };
+		A7643CEF2A85EB9700FF4EE6 /* AvailableStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643CEE2A85EB9700FF4EE6 /* AvailableStatusView.swift */; };
+		A7643CF12A85EB9800FF4EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7643CF02A85EB9800FF4EE6 /* Assets.xcassets */; };
+		A7643CF42A85EB9800FF4EE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7643CF32A85EB9800FF4EE6 /* Preview Assets.xcassets */; };
+		A7643D012A8605F600FF4EE6 /* CallManagerPJSIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643D002A8605F600FF4EE6 /* CallManagerPJSIP.swift */; };
+		A7643D042A86063700FF4EE6 /* PJSIPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7643D032A86063700FF4EE6 /* PJSIPManager.m */; };
+		A7643D072A86080B00FF4EE6 /* ConnectivityStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643D062A86080B00FF4EE6 /* ConnectivityStateEnum.swift */; };
+		A76EF16C2A8C9B8200A14E35 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF1672A8C9B8200A14E35 /* CallManager.swift */; };
+		A76EF16D2A8C9B8200A14E35 /* CXProvider+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF1682A8C9B8200A14E35 /* CXProvider+Sample.swift */; };
+		A76EF16E2A8C9B8200A14E35 /* CXProviderConfiguration+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF1692A8C9B8200A14E35 /* CXProviderConfiguration+Sample.swift */; };
+		A76EF16F2A8C9B8200A14E35 /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF16A2A8C9B8200A14E35 /* ProviderDelegate.swift */; };
+		A76EF1702A8C9B8200A14E35 /* CXCallUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF16B2A8C9B8200A14E35 /* CXCallUpdate.swift */; };
+		A76EF1762A8C9B9A00A14E35 /* IncomingInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF1722A8C9B9A00A14E35 /* IncomingInterfaceView.swift */; };
+		A76EF1772A8C9B9A00A14E35 /* DialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF1732A8C9B9A00A14E35 /* DialView.swift */; };
+		A76EF1782A8C9B9A00A14E35 /* CallInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF1742A8C9B9A00A14E35 /* CallInterfaceView.swift */; };
+		A76EF1792A8C9B9A00A14E35 /* OutgoingInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF1752A8C9B9A00A14E35 /* OutgoingInterfaceView.swift */; };
+		A76EF17D2A8CE6A500A14E35 /* ReceiveCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76EF17C2A8CE6A500A14E35 /* ReceiveCall.swift */; };
+		A76EF1812A8DD8C300A14E35 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76EF1802A8DD8C300A14E35 /* Launch Screen.storyboard */; };
+		A76EF1852A8DDF9C00A14E35 /* Rington.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A76EF1842A8DDF9C00A14E35 /* Rington.mp3 */; };
+		A77D49DD2AC2D1A7002456E7 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77D49DC2AC2D1A7002456E7 /* CallKit.framework */; };
+		A7882B1C2A93750100878C43 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7882B1B2A93750100878C43 /* ExtensionView.swift */; };
+		A7882B1E2A94B19900878C43 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7882B1D2A94B19900878C43 /* ToastView.swift */; };
+		A7882B202A94EDCA00878C43 /* CallHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7882B1F2A94EDCA00878C43 /* CallHistoryManager.swift */; };
+		A7882B222A94EDEF00878C43 /* CallEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7882B212A94EDEF00878C43 /* CallEntry.swift */; };
+		A7882B242A95F02100878C43 /* CallHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7882B232A95F02100878C43 /* CallHistoryView.swift */; };
+		A7882B262A95FC1400878C43 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7882B252A95FC1400878C43 /* TabBarView.swift */; };
+		A7882B282A95FCEC00878C43 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7882B272A95FCEC00878C43 /* SettingView.swift */; };
+		A792E5072A8E0AB700E28CB9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792E5062A8E0AB700E28CB9 /* LoginView.swift */; };
+		A792E5092A8E0CAF00E28CB9 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792E5082A8E0CAF00E28CB9 /* LoginModel.swift */; };
+		A7BBE66B2A98783100F6B475 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBE66A2A98783100F6B475 /* SettingsModel.swift */; };
+		A7BBE66D2A987CDD00F6B475 /* SettingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBE66C2A987CDD00F6B475 /* SettingsEnum.swift */; };
+		A7C4CB892AADB75200C08866 /* RemoteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4CB882AADB75200C08866 /* RemoteVideoView.swift */; };
+		A7C4CB8B2AADB96800C08866 /* VidInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4CB8A2AADB96800C08866 /* VidInfo.swift */; };
+		A7C4CB8D2AAF3FA900C08866 /* PresentVideoVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4CB8C2AAF3FA900C08866 /* PresentVideoVIew.swift */; };
+		A7DBA5B22A8E2F560072249E /* RegisterWithPJSIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBA5B12A8E2F560072249E /* RegisterWithPJSIP.swift */; };
+		F34B08C75EEC4CA00944B83F /* Pods_V3connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478273642DCF044D35C6D537 /* Pods_V3connect.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AFD6C1FDD249A22E5300750 /* Pods-V3connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V3connect.release.xcconfig"; path = "Target Support Files/Pods-V3connect/Pods-V3connect.release.xcconfig"; sourceTree = "<group>"; };
+		478273642DCF044D35C6D537 /* Pods_V3connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_V3connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70A31EB2A8619BF0015CA36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7100D172AD511D2007E5B28 /* DraggableVideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableVideoCallView.swift; sourceTree = "<group>"; };
+		A7100D192AD52A67007E5B28 /* PictureInPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInPictureViewController.swift; sourceTree = "<group>"; };
+		A7395C882AC40D1F00B0D898 /* APi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APi.swift; sourceTree = "<group>"; };
+		A7395C8B2AC40DFD00B0D898 /* AlamoNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoNetworkManager.swift; sourceTree = "<group>"; };
+		A7395C8D2AC4111200B0D898 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		A7395C8F2AC4139C00B0D898 /* VoipDeviceTokenApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoipDeviceTokenApi.swift; sourceTree = "<group>"; };
+		A7395C912AC421D700B0D898 /* VoipDeviceTokenMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoipDeviceTokenMode.swift; sourceTree = "<group>"; };
+		A7395C932AC436A900B0D898 /* InternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
+		A73A75562A8F32890017F28D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A73A75582A8F32D00017F28D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A73A755A2A8F33020017F28D /* BaseViewModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelEnum.swift; sourceTree = "<group>"; };
+		A73A755C2A8F34660017F28D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = CallViews/ContentView.swift; sourceTree = "<group>"; };
+		A743725B2AAD766B0030F3A2 /* PJSIPIntialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJSIPIntialization.swift; sourceTree = "<group>"; };
+		A7643CE92A85EB9700FF4EE6 /* V3connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V3connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7643CEC2A85EB9700FF4EE6 /* V3connectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V3connectApp.swift; sourceTree = "<group>"; };
+		A7643CEE2A85EB9700FF4EE6 /* AvailableStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableStatusView.swift; sourceTree = "<group>"; };
+		A7643CF02A85EB9800FF4EE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7643CF32A85EB9800FF4EE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7643D002A8605F600FF4EE6 /* CallManagerPJSIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManagerPJSIP.swift; sourceTree = "<group>"; };
+		A7643D022A86063600FF4EE6 /* V3connect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "V3connect-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7643D032A86063700FF4EE6 /* PJSIPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJSIPManager.m; sourceTree = "<group>"; };
+		A7643D062A86080B00FF4EE6 /* ConnectivityStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityStateEnum.swift; sourceTree = "<group>"; };
+		A7643D092A86126100FF4EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A7643D0A2A86127100FF4EE6 /* V3connect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = V3connect.entitlements; sourceTree = "<group>"; };
+		A76EF1672A8C9B8200A14E35 /* CallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		A76EF1682A8C9B8200A14E35 /* CXProvider+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXProvider+Sample.swift"; sourceTree = "<group>"; };
+		A76EF1692A8C9B8200A14E35 /* CXProviderConfiguration+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXProviderConfiguration+Sample.swift"; sourceTree = "<group>"; };
+		A76EF16A2A8C9B8200A14E35 /* ProviderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
+		A76EF16B2A8C9B8200A14E35 /* CXCallUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXCallUpdate.swift; sourceTree = "<group>"; };
+		A76EF1722A8C9B9A00A14E35 /* IncomingInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingInterfaceView.swift; sourceTree = "<group>"; };
+		A76EF1732A8C9B9A00A14E35 /* DialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialView.swift; sourceTree = "<group>"; };
+		A76EF1742A8C9B9A00A14E35 /* CallInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallInterfaceView.swift; sourceTree = "<group>"; };
+		A76EF1752A8C9B9A00A14E35 /* OutgoingInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingInterfaceView.swift; sourceTree = "<group>"; };
+		A76EF17C2A8CE6A500A14E35 /* ReceiveCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveCall.swift; sourceTree = "<group>"; };
+		A76EF1802A8DD8C300A14E35 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A76EF1842A8DDF9C00A14E35 /* Rington.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rington.mp3; path = ../Rington.mp3; sourceTree = "<group>"; };
+		A77D49DC2AC2D1A7002456E7 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		A7882B1B2A93750100878C43 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		A7882B1D2A94B19900878C43 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		A7882B1F2A94EDCA00878C43 /* CallHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryManager.swift; sourceTree = "<group>"; };
+		A7882B212A94EDEF00878C43 /* CallEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallEntry.swift; sourceTree = "<group>"; };
+		A7882B232A95F02100878C43 /* CallHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryView.swift; sourceTree = "<group>"; };
+		A7882B252A95FC1400878C43 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		A7882B272A95FCEC00878C43 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		A792E5062A8E0AB700E28CB9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A792E5082A8E0CAF00E28CB9 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		A7BBE66A2A98783100F6B475 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		A7BBE66C2A987CDD00F6B475 /* SettingsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEnum.swift; sourceTree = "<group>"; };
+		A7C4CB882AADB75200C08866 /* RemoteVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteVideoView.swift; sourceTree = "<group>"; };
+		A7C4CB8A2AADB96800C08866 /* VidInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidInfo.swift; sourceTree = "<group>"; };
+		A7C4CB8C2AAF3FA900C08866 /* PresentVideoVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentVideoVIew.swift; sourceTree = "<group>"; };
+		A7DBA5B12A8E2F560072249E /* RegisterWithPJSIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWithPJSIP.swift; sourceTree = "<group>"; };
+		FCCAFD4455694D0FB8BAEFF0 /* Pods-V3connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V3connect.debug.xcconfig"; path = "Target Support Files/Pods-V3connect/Pods-V3connect.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7643CE62A85EB9700FF4EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77D49DD2AC2D1A7002456E7 /* CallKit.framework in Frameworks */,
+				F34B08C75EEC4CA00944B83F /* Pods_V3connect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E3045E2ED6F2D455F3311C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A77D49DC2AC2D1A7002456E7 /* CallKit.framework */,
+				478273642DCF044D35C6D537 /* Pods_V3connect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7395C872AC40A8A00B0D898 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A7395C932AC436A900B0D898 /* InternetConnection.swift */,
+				A7395C8A2AC40DD900B0D898 /* APi */,
+				A7395C8B2AC40DFD00B0D898 /* AlamoNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A7395C8A2AC40DD900B0D898 /* APi */ = {
+			isa = PBXGroup;
+			children = (
+				A7395C882AC40D1F00B0D898 /* APi.swift */,
+				A7395C8D2AC4111200B0D898 /* ApiProvider.swift */,
+				A7395C8F2AC4139C00B0D898 /* VoipDeviceTokenApi.swift */,
+			);
+			path = APi;
+			sourceTree = "<group>";
+		};
+		A7643CE02A85EB9700FF4EE6 = {
+			isa = PBXGroup;
+			children = (
+				A7643CEB2A85EB9700FF4EE6 /* V3connect */,
+				A7643CEA2A85EB9700FF4EE6 /* Products */,
+				A7643D022A86063600FF4EE6 /* V3connect-Bridging-Header.h */,
+				ECDF4972BFD55BD727AC8B61 /* Pods */,
+				0E3045E2ED6F2D455F3311C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7643CEA2A85EB9700FF4EE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7643CE92A85EB9700FF4EE6 /* V3connect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7643CEB2A85EB9700FF4EE6 /* V3connect */ = {
+			isa = PBXGroup;
+			children = (
+				A76EF1802A8DD8C300A14E35 /* Launch Screen.storyboard */,
+				A7643D0A2A86127100FF4EE6 /* V3connect.entitlements */,
+				A7643CF02A85EB9800FF4EE6 /* Assets.xcassets */,
+				A7643D092A86126100FF4EE6 /* Info.plist */,
+				A70A31EB2A8619BF0015CA36 /* AppDelegate.swift */,
+				A7643CEC2A85EB9700FF4EE6 /* V3connectApp.swift */,
+				A7643D082A86087800FF4EE6 /* Enums */,
+				A7643CFB2A86050A00FF4EE6 /* Views */,
+				A7643CFD2A86053500FF4EE6 /* ViewModal */,
+				A7395C872AC40A8A00B0D898 /* Network */,
+				A7643CFC2A86052000FF4EE6 /* Modal */,
+				A7643D052A86067400FF4EE6 /* ObjectiveCHelper */,
+				A7643CF22A85EB9800FF4EE6 /* Preview Content */,
+			);
+			path = V3connect;
+			sourceTree = "<group>";
+		};
+		A7643CF22A85EB9800FF4EE6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A76EF1842A8DDF9C00A14E35 /* Rington.mp3 */,
+				A7643CF32A85EB9800FF4EE6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7643CFB2A86050A00FF4EE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7882B1A2A9374E300878C43 /* Extension */,
+				A76EF1712A8C9B9A00A14E35 /* CallViews */,
+				A792E5062A8E0AB700E28CB9 /* LoginView.swift */,
+				A7C4CB882AADB75200C08866 /* RemoteVideoView.swift */,
+				A7882B252A95FC1400878C43 /* TabBarView.swift */,
+				A73A755C2A8F34660017F28D /* ContentView.swift */,
+				A7882B232A95F02100878C43 /* CallHistoryView.swift */,
+				A7643CEE2A85EB9700FF4EE6 /* AvailableStatusView.swift */,
+				A7882B272A95FCEC00878C43 /* SettingView.swift */,
+				A7C4CB8C2AAF3FA900C08866 /* PresentVideoVIew.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7643CFC2A86052000FF4EE6 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A792E5082A8E0CAF00E28CB9 /* LoginModel.swift */,
+				A7882B212A94EDEF00878C43 /* CallEntry.swift */,
+				A7BBE66A2A98783100F6B475 /* SettingsModel.swift */,
+				A7395C912AC421D700B0D898 /* VoipDeviceTokenMode.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		A7643CFD2A86053500FF4EE6 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				A7C4CB8A2AADB96800C08866 /* VidInfo.swift */,
+				A73A75582A8F32D00017F28D /* BaseViewModel.swift */,
+				A7882B1F2A94EDCA00878C43 /* CallHistoryManager.swift */,
+				A792E5052A8DFDAC00E28CB9 /* PJSIP */,
+				A76EF1662A8C9B8200A14E35 /* CallKit */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		A7643D052A86067400FF4EE6 /* ObjectiveCHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A7643D032A86063700FF4EE6 /* PJSIPManager.m */,
+			);
+			path = ObjectiveCHelper;
+			sourceTree = "<group>";
+		};
+		A7643D082A86087800FF4EE6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A7643D062A86080B00FF4EE6 /* ConnectivityStateEnum.swift */,
+				A73A755A2A8F33020017F28D /* BaseViewModelEnum.swift */,
+				A7BBE66C2A987CDD00F6B475 /* SettingsEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A76EF1662A8C9B8200A14E35 /* CallKit */ = {
+			isa = PBXGroup;
+			children = (
+				A76EF16A2A8C9B8200A14E35 /* ProviderDelegate.swift */,
+				A76EF1672A8C9B8200A14E35 /* CallManager.swift */,
+				A76EF1682A8C9B8200A14E35 /* CXProvider+Sample.swift */,
+				A76EF1692A8C9B8200A14E35 /* CXProviderConfiguration+Sample.swift */,
+				A76EF16B2A8C9B8200A14E35 /* CXCallUpdate.swift */,
+				A76EF17C2A8CE6A500A14E35 /* ReceiveCall.swift */,
+			);
+			path = CallKit;
+			sourceTree = "<group>";
+		};
+		A76EF1712A8C9B9A00A14E35 /* CallViews */ = {
+			isa = PBXGroup;
+			children = (
+				A76EF1732A8C9B9A00A14E35 /* DialView.swift */,
+				A76EF1742A8C9B9A00A14E35 /* CallInterfaceView.swift */,
+				A76EF1722A8C9B9A00A14E35 /* IncomingInterfaceView.swift */,
+				A76EF1752A8C9B9A00A14E35 /* OutgoingInterfaceView.swift */,
+			);
+			path = CallViews;
+			sourceTree = "<group>";
+		};
+		A7882B1A2A9374E300878C43 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A73A75562A8F32890017F28D /* BaseView.swift */,
+				A7882B1B2A93750100878C43 /* ExtensionView.swift */,
+				A7882B1D2A94B19900878C43 /* ToastView.swift */,
+				A7100D172AD511D2007E5B28 /* DraggableVideoCallView.swift */,
+				A7100D192AD52A67007E5B28 /* PictureInPictureViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A792E5052A8DFDAC00E28CB9 /* PJSIP */ = {
+			isa = PBXGroup;
+			children = (
+				A7643D002A8605F600FF4EE6 /* CallManagerPJSIP.swift */,
+				A7DBA5B12A8E2F560072249E /* RegisterWithPJSIP.swift */,
+				A743725B2AAD766B0030F3A2 /* PJSIPIntialization.swift */,
+			);
+			path = PJSIP;
+			sourceTree = "<group>";
+		};
+		ECDF4972BFD55BD727AC8B61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCCAFD4455694D0FB8BAEFF0 /* Pods-V3connect.debug.xcconfig */,
+				1AFD6C1FDD249A22E5300750 /* Pods-V3connect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7643CE82A85EB9700FF4EE6 /* V3connect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7643CF72A85EB9800FF4EE6 /* Build configuration list for PBXNativeTarget "V3connect" */;
+			buildPhases = (
+				2CA73D99C84E338DC0D3E24E /* [CP] Check Pods Manifest.lock */,
+				A7643CE52A85EB9700FF4EE6 /* Sources */,
+				A7643CE62A85EB9700FF4EE6 /* Frameworks */,
+				A7643CE72A85EB9700FF4EE6 /* Resources */,
+				61912FA70B06F548C76A1DCC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = V3connect;
+			productName = V3connect;
+			productReference = A7643CE92A85EB9700FF4EE6 /* V3connect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7643CE12A85EB9700FF4EE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A7643CE82A85EB9700FF4EE6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = A7643CE42A85EB9700FF4EE6 /* Build configuration list for PBXProject "V3connect" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7643CE02A85EB9700FF4EE6;
+			productRefGroup = A7643CEA2A85EB9700FF4EE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7643CE82A85EB9700FF4EE6 /* V3connect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7643CE72A85EB9700FF4EE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76EF1812A8DD8C300A14E35 /* Launch Screen.storyboard in Resources */,
+				A7643CF42A85EB9800FF4EE6 /* Preview Assets.xcassets in Resources */,
+				A76EF1852A8DDF9C00A14E35 /* Rington.mp3 in Resources */,
+				A7643CF12A85EB9800FF4EE6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CA73D99C84E338DC0D3E24E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-V3connect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61912FA70B06F548C76A1DCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-V3connect/Pods-V3connect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-V3connect/Pods-V3connect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-V3connect/Pods-V3connect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7643CE52A85EB9700FF4EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7882B202A94EDCA00878C43 /* CallHistoryManager.swift in Sources */,
+				A76EF16F2A8C9B8200A14E35 /* ProviderDelegate.swift in Sources */,
+				A7100D182AD511D2007E5B28 /* DraggableVideoCallView.swift in Sources */,
+				A7C4CB892AADB75200C08866 /* RemoteVideoView.swift in Sources */,
+				A73A75592A8F32D00017F28D /* BaseViewModel.swift in Sources */,
+				A7C4CB8D2AAF3FA900C08866 /* PresentVideoVIew.swift in Sources */,
+				A73A755D2A8F34660017F28D /* ContentView.swift in Sources */,
+				A73A755B2A8F33020017F28D /* BaseViewModelEnum.swift in Sources */,
+				A7643CEF2A85EB9700FF4EE6 /* AvailableStatusView.swift in Sources */,
+				A7395C922AC421D700B0D898 /* VoipDeviceTokenMode.swift in Sources */,
+				A7643CED2A85EB9700FF4EE6 /* V3connectApp.swift in Sources */,
+				A76EF1702A8C9B8200A14E35 /* CXCallUpdate.swift in Sources */,
+				A76EF1782A8C9B9A00A14E35 /* CallInterfaceView.swift in Sources */,
+				A7395C942AC436A900B0D898 /* InternetConnection.swift in Sources */,
+				A76EF16C2A8C9B8200A14E35 /* CallManager.swift in Sources */,
+				A792E5092A8E0CAF00E28CB9 /* LoginModel.swift in Sources */,
+				A76EF1772A8C9B9A00A14E35 /* DialView.swift in Sources */,
+				A7643D012A8605F600FF4EE6 /* CallManagerPJSIP.swift in Sources */,
+				A7395C8E2AC4111200B0D898 /* ApiProvider.swift in Sources */,
+				A76EF1762A8C9B9A00A14E35 /* IncomingInterfaceView.swift in Sources */,
+				A7BBE66B2A98783100F6B475 /* SettingsModel.swift in Sources */,
+				A7100D1A2AD52A67007E5B28 /* PictureInPictureViewController.swift in Sources */,
+				A76EF16D2A8C9B8200A14E35 /* CXProvider+Sample.swift in Sources */,
+				A7882B1E2A94B19900878C43 /* ToastView.swift in Sources */,
+				A7395C902AC4139C00B0D898 /* VoipDeviceTokenApi.swift in Sources */,
+				A7DBA5B22A8E2F560072249E /* RegisterWithPJSIP.swift in Sources */,
+				A7395C892AC40D1F00B0D898 /* APi.swift in Sources */,
+				A743725C2AAD766B0030F3A2 /* PJSIPIntialization.swift in Sources */,
+				A76EF16E2A8C9B8200A14E35 /* CXProviderConfiguration+Sample.swift in Sources */,
+				A7BBE66D2A987CDD00F6B475 /* SettingsEnum.swift in Sources */,
+				A76EF17D2A8CE6A500A14E35 /* ReceiveCall.swift in Sources */,
+				A70A31EC2A8619BF0015CA36 /* AppDelegate.swift in Sources */,
+				A7C4CB8B2AADB96800C08866 /* VidInfo.swift in Sources */,
+				A7882B222A94EDEF00878C43 /* CallEntry.swift in Sources */,
+				A7882B282A95FCEC00878C43 /* SettingView.swift in Sources */,
+				A7882B262A95FC1400878C43 /* TabBarView.swift in Sources */,
+				A7643D072A86080B00FF4EE6 /* ConnectivityStateEnum.swift in Sources */,
+				A792E5072A8E0AB700E28CB9 /* LoginView.swift in Sources */,
+				A73A75572A8F32890017F28D /* BaseView.swift in Sources */,
+				A76EF1792A8C9B9A00A14E35 /* OutgoingInterfaceView.swift in Sources */,
+				A7882B242A95F02100878C43 /* CallHistoryView.swift in Sources */,
+				A7882B1C2A93750100878C43 /* ExtensionView.swift in Sources */,
+				A7643D042A86063700FF4EE6 /* PJSIPManager.m in Sources */,
+				A7395C8C2AC40DFD00B0D898 /* AlamoNetworkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A7643CF52A85EB9800FF4EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7643CF62A85EB9800FF4EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7643CF82A85EB9800FF4EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCAFD4455694D0FB8BAEFF0 /* Pods-V3connect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = V3connect/V3connect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"V3connect/Preview Content\"";
+				DEVELOPMENT_TEAM = T8BGK4PU6S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = V3connect/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "V3connect requires access to your phone’s camera.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The microphone permission is needed to to receive voice commands.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.V3connected;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "V3connect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A7643CF92A85EB9800FF4EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFD6C1FDD249A22E5300750 /* Pods-V3connect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = V3connect/V3connect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"V3connect/Preview Content\"";
+				DEVELOPMENT_TEAM = T8BGK4PU6S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = V3connect/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "V3connect requires access to your phone’s camera.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The microphone permission is needed to to receive voice commands.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.V3connected;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "V3connect-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7643CE42A85EB9700FF4EE6 /* Build configuration list for PBXProject "V3connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7643CF52A85EB9800FF4EE6 /* Debug */,
+				A7643CF62A85EB9800FF4EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7643CF72A85EB9800FF4EE6 /* Build configuration list for PBXNativeTarget "V3connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7643CF82A85EB9800FF4EE6 /* Debug */,
+				A7643CF92A85EB9800FF4EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7643CE12A85EB9700FF4EE6 /* Project object */;
+}
